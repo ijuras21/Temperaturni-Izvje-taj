@@ -29,5 +29,29 @@ namespace Temperaturni_Izvještaj {
             }
             return combinedData;
         }
+        private double CalculateTemperature(double[] primaryData, double[] secondaryData, int
+hourIndex) {
+            double pTemp = primaryData[hourIndex];
+            double sTemp = secondaryData[hourIndex];
+            bool pTempValid = IsValid(pTemp);
+            bool sTempValid = IsValid(sTemp);
+            double calculatedTemp;
+
+            if (pTempValid && sTempValid) {
+                calculatedTemp = (pTemp + sTemp) / 2;
+            } else if (pTempValid == true && sTempValid == false) {
+                calculatedTemp = pTemp;
+            } else if (pTempValid == false && sTempValid == true) {
+                calculatedTemp = sTemp;
+            } else {
+                calculatedTemp = PerformInterpolation(primaryData, secondaryData, hourIndex);
+            }
+            return calculatedTemp;
+        }
+        private bool IsValid(double pTemp) {
+            return pTemp != -1000;
+        }        private double PerformInterpolation(double[] primaryData, double[] secondaryData, int hourIndex) {
+            throw new NotImplementedException();
+        }
     }
 }
