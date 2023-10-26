@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Temperaturni Izvještaj", "Temperaturni Izvještaj\Temperaturni Izvještaj.csproj", "{53EC4054-9563-4772-8624-D6F159BD4437}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{53EC4054-9563-4772-8624-D6F159BD4437}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53EC4054-9563-4772-8624-D6F159BD4437}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53EC4054-9563-4772-8624-D6F159BD4437}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53EC4054-9563-4772-8624-D6F159BD4437}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B9E09A7B-61DD-4D52-9A50-55979EEC5036}
+	EndGlobalSection
+EndGlobal
