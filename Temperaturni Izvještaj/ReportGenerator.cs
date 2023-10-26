@@ -39,8 +39,7 @@ namespace Temperaturni_Izvještaj {
         private string PrepareHourlyData(double[] temperatures) {
             string hourlyData = "";
             for (int i = 0; i < 24; i++) {
-                hourlyData += $"{i} - {i + 1} h = {Math.Round(temperatures[i],
-               2)}" + Environment.NewLine;
+                hourlyData += $"{i} - {i + 1} h = {Math.Round(temperatures[i],2)}" + Environment.NewLine;
             }
             return hourlyData;
         }
